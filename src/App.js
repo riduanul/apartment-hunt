@@ -8,10 +8,11 @@ import Home from './Components/Home/Home/Home';
 import Login from "./Components/Login/Login";
 import RentDetails from "./Components/RentDetails/RentDetails";
 import HomeDetails from "./Components/HomeDetails/HomeDetails";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState()
+  const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div>
@@ -26,9 +27,9 @@ function App() {
           <Route path='/homeDetail/:name'>
             <HomeDetails />
           </Route>
-          <Route path='/rentDetails'>
+          <PrivateRoute path='/rentDetails'>
             <RentDetails />
-          </Route>
+          </PrivateRoute>
 
        </Switch>
      </Router>

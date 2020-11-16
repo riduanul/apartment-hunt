@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 const RentDetails = () => {
     const [loggedInUser] = useContext(UserContext)
+    console.log(loggedInUser);
     return (
         <div className='container'>
             <div className="top row">
@@ -17,8 +18,9 @@ const RentDetails = () => {
                 <div className="col-md-4 mt-5 ml-0">
                     <h4>Add Rent House</h4>
                 </div>
-                <div className="col-md-4">
-                    {/* <h6>{loggedInUser.displayName}</h6> */}
+                <div className="col-md-4 mt-4  d-flex align-items-center justify-content-end"> 
+                 <div><img className='rounded-circle' src={loggedInUser.photoURL} alt="" width='45'/></div>
+                    <div><h6>{loggedInUser.displayName}</h6></div>
                 </div>
 
             </div>
