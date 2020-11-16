@@ -1,0 +1,13 @@
+.img-style{
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    
+}
+.btn-primary{
+    background-color: #275A53;
+}
+.btn-primary:hover{
+    background-color: #275A53;
+}

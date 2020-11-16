@@ -1,0 +1,31 @@
+.img-viewDetail{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../../images/Banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+
+.btn-primary :hover{
+    background-color:#275A53;
+    
+}
+.request{
+    line-height: 40px;
+    
+
+}
+.request input{
+    width:280px;
+}
+.request textarea{
+    width: 280px;
+}
+.request .btn{
+    width: 280px;
+}
+.home-img{
+    width: 100%;
+    height: 300px;
+}
