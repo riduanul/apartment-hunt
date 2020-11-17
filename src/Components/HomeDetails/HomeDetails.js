@@ -30,7 +30,14 @@ const HomeDetails = () => {
               .map((home) => (
                 <div className="home-img">
                   <img src={home.img} alt="" className="mb-3" />
-                  <div className="d-flex justify-content-between">
+                  <div className="row">
+                    <div className="col-md-3 "><img src={home.img1} alt="" width='140'/></div>
+                    <div className="col-md-3"><img src={home.img2} alt="" width='140'/></div>
+                    <div className="col-md-3"><img src={home.img3} alt="" width='140'/></div>
+                    <div className="col-md-3"><img src={home.img4} alt="" width='140'/></div>
+                    
+                  </div>
+                  <div className="d-flex justify-content-between mt-5">
                     <div>
                       {" "}
                       <h4 style={{ fontWeight: "800" }}>{home.name}</h4>{" "}
@@ -42,9 +49,9 @@ const HomeDetails = () => {
                     </div>
                   </div>
                   <p>{home.description}</p> <br/> <br/>
-                  <h4 style={{ fontWeight: "800" }}>Price Details:</h4>
+                  <h4 style={{ fontWeight: "800" }}>Price Details-</h4>
                     <p>{home.priceDetails}</p> <br/> <br/>
-                    <h4 style={{ fontWeight: "800" }}>Property Details-:</h4>
+                    <h4 style={{ fontWeight: "800" }}>Property Details-</h4>
                     <p>{home.property}</p>
                 </div>
               ))}
