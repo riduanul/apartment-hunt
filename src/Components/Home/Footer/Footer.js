@@ -1,8 +1,9 @@
 import React from 'react';
-import './Footer.css'
-import { ImLocation } from 'react-icons/im';
-import { SiLinkedin } from 'react-icons/si';
-import { AiFillFacebook, AiOutlineInstagram,AiFillYoutube } from 'react-icons/ai';
+import './Footer.css';
+import fbIcon from '../../../images/logos/Vector.png';
+import instIcon from '../../../images/logos/Vector-1.png';
+import linkedInIcon from '../../../images/logos/Vector-2.png';
+import youTubeIcon from '../../../images/logos/Vector-3.png';
 
 const Footer = () => {
     return (
@@ -35,8 +36,13 @@ const Footer = () => {
                 <div className="col-md-3">
                     <h6>About us</h6> <br/>
                     We are the top real estate agency in Dhaka, with agents available to answer any question 24/7, <br/>
-                    <AiFillFacebook/> <AiOutlineInstagram /> <SiLinkedin /> <AiFillYoutube/>
-
+                    <div className="row mt-3">
+                        <div className="col-md-3"><img src={fbIcon} alt="" width='30'/></div>
+                        <div className="col-md-3"> <img src={instIcon} alt="" width='30'/></div>
+                        <div className="col-md-3"><img src={linkedInIcon} alt="" width='30'/></div>
+                        <div className="col-md-3"><img src={youTubeIcon} alt="" width='30'/></div>
+                    </div>
+                    
                     </div>
 
             </div>
