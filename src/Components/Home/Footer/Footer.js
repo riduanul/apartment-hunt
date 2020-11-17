@@ -4,6 +4,8 @@ import fbIcon from '../../../images/logos/Vector.png';
 import instIcon from '../../../images/logos/Vector-1.png';
 import linkedInIcon from '../../../images/logos/Vector-2.png';
 import youTubeIcon from '../../../images/logos/Vector-3.png';
+import { ImLocation } from 'react-icons/im';
+
 
 const Footer = () => {
     return (
