@@ -26,9 +26,9 @@ const RentDetails = () => {
             </div>
             <div className="sideBar">
             <ul> 
-               <p> <FaShoppingCart/> Booking List</p> 
-               <p> <FaPlus/> Add Rent House</p> 
-               <p> <FcHome/> My Rent</p>
+               <Link to="/bookingList"><p> <FaShoppingCart/> Booking List</p> </Link>
+               <Link to="addRent"><p> <FaPlus/> Add Rent House</p> </Link>
+               <Link to="myRent"><p> <FcHome/> My Rent</p></Link>
                     
                 </ul>
             </div>

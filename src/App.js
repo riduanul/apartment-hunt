@@ -9,6 +9,9 @@ import Login from "./Components/Login/Login";
 import RentDetails from "./Components/RentDetails/RentDetails";
 import HomeDetails from "./Components/HomeDetails/HomeDetails";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import MyRent from "./Components/MyRent/MyRent";
+import BookingList from "./Components/BookingList/BookingList";
+import AddRent from "./Components/AddRent/AddRent";
 
 export const UserContext = createContext();
 function App() {
@@ -30,7 +33,15 @@ function App() {
           <PrivateRoute path='/rentDetails'>
             <RentDetails />
           </PrivateRoute>
-
+          <Route path="/myRent">
+            <MyRent />
+          </Route>
+          <Route path="/bookingList">
+            <BookingList />
+          </Route>
+          <Route path='/addRent'>
+            <AddRent />
+          </Route>
        </Switch>
      </Router>
     </div>

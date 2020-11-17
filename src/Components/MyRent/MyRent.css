@@ -1,0 +1,17 @@
+.my-rent{
+    margin-top:0px;
+    margin-left: 300px;
+    padding: 30px;
+    /* border: 20px solid gray; */
+    /* border-left: 20px solid gray; */
+    height: 600px;
+}
+
+.my-rent-bg{
+    background-color: rgb(238, 238, 238);
+}
+.rent-item-bg{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}

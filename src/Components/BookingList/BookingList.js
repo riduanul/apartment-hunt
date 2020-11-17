@@ -1,39 +1,44 @@
-// import React from 'react';
+import React from 'react';
+import './BookingList.css';
+import RentDetails from '../RentDetails/RentDetails';
 
-// const BookingList = () => {
-//     return (
-//         <div>
-//             <div className="col-md-9 ml-3 pl-3 pt-3 pr-3 style-bar ">
-//                    {/* <div style={bgStyles} > */}
-//                    <table className="table table-borderless">
-//             <thead>
-//                 <tr>
-//                 <th className="text-secondary text-left" scope="col"> House Name</th>
-//                 <th className="text-secondary" scope="col">Price</th>
-//                 <th className="text-secondary" scope="col">Action</th>
+const BookingList = () => {
+    return (
+        <div>
+            <RentDetails />
+            <div className="booking-list booking-bg">
+                 
+              <div>
+              <table className="table table-borderless booking-item-bg">
+            <thead>
+                <tr>
+                <th className="text-secondary text-left" scope="col"> Name</th>
+                <th className="text-secondary" scope="col">Email Id</th>
+                <th className="text-secondary" scope="col">Phone</th>
+                <th className="text-secondary" scope="col">Message</th>
+                <th className="text-secondary" scope="col">status</th>
               
-//             </tr>
-//             </thead>
-//             <tbody>
-//                 {
-//                   orderList.map((orders, index) => 
+            </tr>
+            </thead>
+            <tbody>
+               
                         
-//                     <tr>
-//                         <td>{index + 1}</td>
-//                         <td>{orders.name}</td>
-//                         <td>{orders.email}</td>
-//                         <td>{orders.category}</td>
-//                         <td style={{width:'170px'}}>{orders.description}</td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         
-//                     </tr>
-//                     )
-//                 }
-//                     </tbody>
-//                 </table>
-//             </div>
-//         </div>
-//     </div>
-//     );
-// };
+                    </tr>
+                   
+                    </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    
+    );
+};
 
-// export default BookingList;
+export default BookingList;

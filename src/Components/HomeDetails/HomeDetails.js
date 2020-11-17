@@ -58,7 +58,8 @@ const HomeDetails = () => {
           </div>
 
           <div className="col-md-4 request">
-            <form action="">
+           <div className="form-bg">
+           <form action="" >
               <input type="text" placeholder="Name" />
               <input type="number" placeholder="Phone No." />
               <input type="text" placeholder="Email address" />
@@ -72,6 +73,7 @@ const HomeDetails = () => {
                 Request Booking
               </button>
             </form>
+           </div>
           </div>
         </div>
       </div>
